@@ -15,7 +15,7 @@ You need to register on [api.passdock.com](https://api.passdock.com) and get an 
 
 Once obtained you can create a new istance of the Passdock object.
 
-    Passdock passdock = new Passdock("YOUR_TOKEN");
+	Passdock passdock = new Passdock("YOUR_TOKEN");
 
 Then you can call some methods to get the desired informations out of Passdock or to create new Passes.
 
@@ -43,24 +43,24 @@ The first argument is the template id, the second one if you want exanded errors
 
 The first parameter is the Pass ID, the second its template ID
 
-    String pass = passdock.getPass(132, 82);
+    	String pass = passdock.getPass(132, 82);
 
 #### Create a Pass
 
 The first argument is a JSON string representing the Pass structure, more informations on [api.passdock.com/doc](https://api.passdock.com/doc).
 The second argument is the template id, the third one if you want debug informations and the last one exanded errors.
 
-    boolean createdOrNot = passdock.createPass(pass, 82, true, false);
+    	boolean createdOrNot = passdock.createPass(pass, 82, true, false);
 
 #### Update a Pass
 
 The first argument is a JSON string representing the update to apply to the pass, more informations on [api.passdock.com/doc](https://api.passdock.com/doc).
 The second argument is the template id, the third one if you want debug informations and the last one exanded errors. It will return a JSON representation of the updated pass.
 
-    String updatedPass = passdock.updatePass(update , 94, 82, true, false);
+    	String updatedPass = passdock.updatePass(update , 94, 82, true, false);
 
 #### Destroy a Pass 
 
 The first argument is the template id, the second one if you want exanded errors.
 
-    boolean destroyedOrNot = passdock.destroyPass(94, 82, true);
+    	boolean destroyedOrNot = passdock.destroyPass(94, 82, true);
