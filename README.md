@@ -5,9 +5,7 @@ PassDock Java sample code.
 
 ### Dependancies
 
-This sample code requires *Apache's HTTPComponents HttpClient*.
-
-You can get it [here](http://hc.apache.org/).
+This sample code requires [Apache's HTTPComponents HttpClient](http://hc.apache.org/).
 
 ### Get your authentication token
 
